@@ -1,0 +1,156 @@
+:root {
+    --color_1: #b67961;
+    --color_2: #152a29;
+    --color_3: #6d6f44;
+    --color_4: #615f5b;
+    --color_5: #5395ef;
+  }
+  *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+  } 
+    
+  navbar{
+    display:flex;
+    flex-direction:horizontal;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: var(--color_1);
+    height:10vh;
+    position: fixed;
+    top:0;
+    width:100vw;
+    z-index:3;
+  }
+    
+  .nav{
+    text-decoration:none;
+    color: var(--color_2);
+    font-size: 150%;
+  }
+  header{
+    color: var(--color_5);
+    font-size: 200%;
+    text-align: center;
+    width: 100vw;
+    padding:20vh 10vh 10vh 10vh;
+    background:radial-gradient(var(--color_1), white);
+    
+  }
+  i{
+    width: 10px;
+    height: 10px;
+  }
+  .break{
+    background-color: var(--color_3);
+    width: 100vw;
+    height:10vh;
+    opacity: 75%;
+  }
+  h2{
+    font-size:200%;
+    color: var(--color_5);
+    margin-bottom: 2vw;
+  }
+  .category{
+    margin: 2vw;
+  }
+  .list{
+    display: flex;
+    flex-direction: horizontal;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: top;
+    gap:15px;
+  }
+  .floatimg{
+    align-items:center;
+  }
+  #swim{
+    align-text:center;
+  }
+
+  h3{
+    color: var(--color_1);
+    text-align: center;
+  }
+  i{
+    
+  }
+  .actimg{
+    width: 30vw;
+    padding: 2vw;
+  }
+  ul{
+    width: 20vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+  }
+  .meals{
+    list-style:none;
+    text-align:center;
+  }
+  .actlink{
+    text-decoration:none;
+    color: var(--color_1);
+  }
+  .float{
+    max-width: 10vw;
+  }
+  
+  footer{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 7vh;
+  }
+  #linkedin{
+    text-decoration: none;
+    color: black;
+  }
+  .restlink{
+    text-decoration:none;
+    color: black;
+  }
+  
+  @media (max-width: 769px){
+    .actimg{
+      width: 70vw;
+    }
+    ul{
+      width: 60vw;
+    }
+    navbar{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: var(--color_1);
+    position: fixed;
+    left: 0;
+      top:0;
+    height: 100vh;
+      width: 20vw;
+  }
+    .nav{
+      font-size:100%;
+    }
+    body{
+      padding-left: 20vw;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    #climber{
+      max-width:60vw;
+    }
+  }
+@media (min-width:770px){
+  #skilist{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+}
